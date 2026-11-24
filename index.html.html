@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associados Contábeis | Contabilidade Estratégica e Segurança Jurídica em Macapá - AP</title>
+    <meta name="description" content="Contabilidade consultiva, migração segura de MEI para ME, planejamento tributário e prevenção trabalhista em Macapá/AP com o Contador Luiz Fernando Lemos Costa (CRC-AP nº 002037/O-6).">
+    <link rel="canonical" href="https://associadoscontabeis.com.br/">
+    
+    <!-- Open Graph / Compartilhamento WhatsApp e Redes Sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://associadoscontabeis.com.br/">
+    <meta property="og:title" content="Associados Contábeis | Macapá - AP">
+    <meta property="og:description" content="Contabilidade Estratégica & Segurança Jurídica para Empresas em Macapá. Atendimento direto com o Contador Luiz Fernando Lemos Costa (CRC-AP nº 002037/O-6).">
+
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            950: '#071120',
+                            900: '#0B192C',
+                            800: '#112240',
+                            700: '#1E3A5F',
+                        },
+                        gold: {
+                            300: '#F3D77E',
+                            400: '#E5C158',
+                            500: '#D4AF37',
+                            600: '#C59B27',
+                            700: '#A37E1B',
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(11, 25, 44, 0.08)',
+                        'glow': '0 0 25px rgba(197, 155, 39, 0.28)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#F8FAFC] text-slate-800 antialiased selection:bg-gold-600 selection:text-white">
+
+    <!-- ===================================================================== -->
+    <!-- CONFIGURAÇÃO OFICIAL DA ASSOCIADOS CONTÁBEIS                          -->
+    <!-- ===================================================================== -->
+    <script>
+        const WHATSAPP_CONFIG = {
+            phone: '5596991959847',
+            formattedPhone: '(96) 99195-9847',
+            consultantName: 'Luiz Fernando',
+            firmName: 'Associados Contábeis',
+            domain: 'associadoscontabeis.com.br'
+        };
+
+        function buildWhatsAppUrl(message) {
+            return `https://wa.me/${WHATSAPP_CONFIG.phone}?text=${encodeURIComponent(message)}`;
+        }
+    </script>
+
+    <!-- ===================================================================== -->
+    <!-- HEADER / NAVEGAÇÃO FIXA                                               -->
+    <!-- ===================================================================== -->
+    <header class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur-md border-b border-navy-800 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-gold-500 to-gold-700 flex items-center justify-center shadow-glow group-hover:scale-105 transition-transform">
+                        <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M4 18h16M6 18V9m4 9V9m4 9V9m4 9V9M3 9l9-6 9 6" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-heading font-bold text-lg sm:text-xl tracking-tight text-white leading-none">
+                            ASSOCIADOS
+                        </span>
+                        <span class="text-[11px] font-semibold tracking-[0.22em] text-gold-400 uppercase mt-1">
+                            Contábeis
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="#servicos" class="text-sm font-medium text-slate-300 hover:text-gold-400 transition-colors">Serviços</a>
+                    <a href="#diagnostico" class="text-sm font-medium text-slate-300 hover:text-gold-400 transition-colors">Diagnóstico MEI/ME</a>
+                    <a href="#diferenciais" class="text-sm font-medium text-slate-300 hover:text-gold-400 transition-colors">Diferenciais</a>
+                    <a href="#faq" class="text-sm font-medium text-slate-300 hover:text-gold-400 transition-colors">Dúvidas</a>
+                    <a href="#contato" class="text-sm font-medium text-slate-300 hover:text-gold-400 transition-colors">Contato</a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <div class="hidden md:flex items-center gap-4">
+                    <a id="header-wa-btn" href="https://wa.me/5596991959847" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center gap-2 bg-gold-600 hover:bg-gold-500 text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-md hover:shadow-glow transition-all">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+                        (96) 99195-9847
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" type="button" aria-label="Abrir Menu"
+                        class="lg:hidden p-2.5 rounded-xl text-slate-300 hover:text-white hover:bg-navy-800 focus:outline-none">
+                    <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-900 border-t border-navy-800 px-4 pt-3 pb-6 space-y-2">
+            <a href="#servicos" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-200 hover:bg-navy-800 hover:text-gold-400">Serviços</a>
+            <a href="#diagnostico" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-200 hover:bg-navy-800 hover:text-gold-400">Diagnóstico MEI/ME</a>
+            <a href="#diferenciais" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-200 hover:bg-navy-800 hover:text-gold-400">Diferenciais</a>
+            <a href="#faq" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-200 hover:bg-navy-800 hover:text-gold-400">Dúvidas Frequentes</a>
+            <a href="#contato" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-200 hover:bg-navy-800 hover:text-gold-400">Contato</a>
+            <div class="pt-2">
+                <a id="mobile-wa-btn" href="https://wa.me/5596991959847" target="_blank" rel="noopener noreferrer"
+                   class="w-full flex items-center justify-center gap-2 bg-gold-600 hover:bg-gold-500 text-white font-semibold py-3.5 px-4 rounded-xl shadow-md">
+                    WhatsApp: (96) 99195-9847
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================================================================== -->
+    <!-- HERO SECTION                                                          -->
+    <!-- ===================================================================== -->
+    <section class="relative bg-navy-900 text-white overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+        <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#D4AF37 1px, transparent 1px); background-size: 32px 32px;"></div>
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-gold-600/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 -left-24 w-80 h-80 bg-navy-700/30 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Copy & CTAs -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-800 border border-navy-700 text-gold-400 text-xs sm:text-sm font-medium">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Julião Ramos, Macapá - AP • Atendimento Presencial e Digital
+                    </div>
+
+                    <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.15] text-white">
+                        Contabilidade Estratégica & <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-300">Segurança Jurídica</span> para Empresas em Macapá
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+                        Unimos rigor contábil, planejamento tributário e prevenção trabalhista para empresas de Macapá e todo o Amapá. Faça a transição segura de MEI para ME, regularize seu CNPJ e reduza impostos dentro da lei.
+                    </p>
+
+                    <!-- Primary & Secondary CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <a href="#diagnostico"
+                           class="inline-flex items-center justify-center gap-2.5 bg-gold-600 hover:bg-gold-500 text-white font-semibold text-base px-7 py-4 rounded-xl shadow-lg hover:shadow-glow transition-all">
+                            Fazer Diagnóstico Gratuito MEI / ME
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                            </svg>
+                        </a>
+
+                        <a id="hero-wa-btn" href="https://wa.me/5596991959847" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center justify-center gap-2.5 bg-navy-800 hover:bg-navy-700 border border-navy-700 text-white font-semibold text-base px-7 py-4 rounded-xl transition-all">
+                            <svg class="w-5 h-5 text-emerald-400 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+                            Chamar no WhatsApp
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-navy-800">
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Registro Ativo</p>
+                                <p class="text-sm font-semibold text-white">CRC-AP nº 002037/O-6</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Blindagem Preventiva</p>
+                                <p class="text-sm font-semibold text-white">Contábil + Jurídica</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Agilidade Local</p>
+                                <p class="text-sm font-semibold text-white">Macapá e Todo o AP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Visual Card / Alertas Fiscais -->
+                <div class="lg:col-span-5">
+                    <div class="bg-navy-800/95 border border-navy-700 rounded-2xl p-6 sm:p-8 shadow-2xl relative">
+                        <div class="flex items-center justify-between border-b border-navy-700 pb-4 mb-5">
+                            <div>
+                                <span class="text-xs font-semibold uppercase tracking-wider text-gold-400">Proteção Empresarial</span>
+                                <h2 class="font-heading text-lg font-bold text-white mt-0.5">O que Resolvemos para Você</h2>
+                            </div>
+                            <span class="px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-400 text-xs font-semibold">Macapá - AP</span>
+                        </div>
+
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3.5 bg-navy-900/80 p-4 rounded-xl border border-navy-700/80">
+                                <span class="w-7 h-7 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">1</span>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-white">Transição Segura de MEI para ME</h3>
+                                    <p class="text-xs text-slate-300 mt-1">Evite o desenquadramento retroativo pela Receita Federal (cruzamento de Pix e cartões) com multas pesadas.</p>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start gap-3.5 bg-navy-900/80 p-4 rounded-xl border border-navy-700/80">
+                                <span class="w-7 h-7 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">2</span>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-white">Redução Legal da Carga Tributária</h3>
+                                    <p class="text-xs text-slate-300 mt-1">Análise de CNAEs, Fator R e enquadramento no Simples Nacional ou Lucro Presumido para pagar apenas o devido.</p>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start gap-3.5 bg-navy-900/80 p-4 rounded-xl border border-navy-700/80">
+                                <span class="w-7 h-7 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">3</span>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-white">Regularização Fiscal, Alvarás e CADIN</h3>
+                                    <p class="text-xs text-slate-300 mt-1">Destravamento de pendências na Prefeitura de Macapá, SEFAZ-AP, PGFN e Receita Federal.</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="mt-6 pt-4 border-t border-navy-700 flex items-center justify-between text-xs text-slate-400">
+                            <span>Contador: <strong class="text-slate-200">Luiz Fernando L. Costa</strong></span>
+                            <span class="text-gold-400 font-medium">associadoscontabeis.com.br</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- CORE SERVICES GRID (6 CARDS)                                          -->
+    <!-- ===================================================================== -->
+    <section id="servicos" class="py-16 lg:py-24 bg-[#F8FAFC]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-gold-600">Soluções Completas</span>
+                <h2 class="font-heading text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-900 mt-2">
+                    Serviços Contábeis, Tributários e Trabalhistas
+                </h2>
+                <p class="text-slate-600 mt-3 text-base">
+                    Assessoria técnica completa para empresas em Macapá e todo o Estado do Amapá crescerem com segurança jurídica.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                
+                <!-- Card 1: Migração MEI para ME -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-soft hover:-translate-y-1 hover:border-gold-500/60 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mb-5">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                        </div>
+                        <h3 class="font-heading text-lg font-bold text-navy-900">Migração MEI para ME</h3>
+                        <p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+                            Planejamento para não estourar o limite anual e evitar o desenquadramento retroativo com multas, garantindo a transição segura para Microempresa.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <a href="#diagnostico" class="text-sm font-semibold text-gold-600 hover:text-gold-700 inline-flex items-center gap-1">
+                            Avaliar minha migração &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Abertura e Legalização de Empresas -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-soft hover:-translate-y-1 hover:border-gold-500/60 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mb-5">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                        </div>
+                        <h3 class="font-heading text-lg font-bold text-navy-900">Abertura e Legalização de Empresas</h3>
+                        <p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+                            Emissão de CNPJ, registro na JUCAP, Alvará Municipal em Macapá, Inscrição Estadual (SEFAZ-AP) e licenciamento rápido sem burocracia.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <a href="#diagnostico" class="text-sm font-semibold text-gold-600 hover:text-gold-700 inline-flex items-center gap-1">
+                            Abrir minha empresa &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Contabilidade Consultiva -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-soft hover:-translate-y-1 hover:border-gold-500/60 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mb-5">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                        </div>
+                        <h3 class="font-heading text-lg font-bold text-navy-900">Contabilidade Consultiva</h3>
+                        <p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+                            Gestão completa para Simples Nacional e Lucro Presumido, balancetes mensais claros e planejamento para redução legal da carga tributária.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <a href="#diagnostico" class="text-sm font-semibold text-gold-600 hover:text-gold-700 inline-flex items-center gap-1">
+                            Reduzir impostos &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4: Departamento Pessoal e eSocial -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-soft hover:-translate-y-1 hover:border-gold-500/60 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mb-5">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <h3 class="font-heading text-lg font-bold text-navy-900">Departamento Pessoal e eSocial</h3>
+                        <p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+                            Folha de pagamento, FGTS Digital, admissões, férias, rescisões e blindagem preventiva contra passivos e ações trabalhistas.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <a href="#diagnostico" class="text-sm font-semibold text-gold-600 hover:text-gold-700 inline-flex items-center gap-1">
+                            Blindar minha folha &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 5: Regularização Fiscal e CADIN -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-soft hover:-translate-y-1 hover:border-gold-500/60 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mb-5">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <h3 class="font-heading text-lg font-bold text-navy-900">Regularização Fiscal e CADIN</h3>
+                        <p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+                            Emissão de certidões negativas (CNDs), parcelamentos tributários estratégicos, baixa no CADIN e defesa administrativa fiscal.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <a href="#diagnostico" class="text-sm font-semibold text-gold-600 hover:text-gold-700 inline-flex items-center gap-1">
+                            Regularizar pendências &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 6: Alteração e Baixa Contratual -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-soft hover:-translate-y-1 hover:border-gold-500/60 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mb-5">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+                        </div>
+                        <h3 class="font-heading text-lg font-bold text-navy-900">Alteração e Baixa Contratual</h3>
+                        <p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+                            Atualização de quadro societário, mudança de endereço comercial, inclusão de CNAEs e encerramento seguro de empresas sem débitos ocultos.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <a href="#diagnostico" class="text-sm font-semibold text-gold-600 hover:text-gold-700 inline-flex items-center gap-1">
+                            Solicitar alteração &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- INTERACTIVE 'DIAGNÓSTICO RÁPIDO MEI / EMPRESA' TOOL                   -->
+    <!-- ===================================================================== -->
+    <section id="diagnostico" class="py-16 lg:py-24 bg-white border-y border-slate-200/80">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="inline-block px-3 py-1 rounded-full bg-gold-500/15 text-gold-700 text-xs font-bold uppercase tracking-wider mb-3">
+                    Avaliação Gratuita e Imediata
+                </span>
+                <h2 class="font-heading text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-900">
+                    Diagnóstico Rápido MEI / Empresa
+                </h2>
+                <p class="text-slate-600 mt-3 text-base">
+                    Preencha os dados básicos abaixo para receber uma pré-análise e enviar seu cenário diretamente para o WhatsApp do Contador Luiz Fernando.
+                </p>
+            </div>
+
+            <div class="bg-[#F8FAFC] border border-slate-200 rounded-2xl shadow-soft overflow-hidden">
+                <form id="diagnostic-form" class="grid lg:grid-cols-12" novalidate>
+                    
+                    <!-- Left: Interactive Form Fields -->
+                    <div class="lg:col-span-7 p-6 sm:p-8 lg:p-10 space-y-5">
+                        
+                        <!-- Field 1: Nome / Empresa -->
+                        <div>
+                            <label for="diag-name" class="block text-sm font-bold text-navy-900 mb-1.5">
+                                1. Seu Nome ou Nome da Empresa *
+                            </label>
+                            <input type="text" id="diag-name" required placeholder="Ex.: João Silva / Silva Comércio Ltda"
+                                   class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-medium text-navy-900 placeholder:text-slate-400 focus:border-gold-600 focus:ring-2 focus:ring-gold-500/20 outline-none transition-all">
+                            <p id="name-error" class="hidden text-xs font-semibold text-red-600 mt-1.5">
+                                Por favor, informe seu nome ou o nome da sua empresa para gerar o diagnóstico.
+                            </p>
+                        </div>
+
+                        <!-- Field 2: Regime Atual -->
+                        <div>
+                            <label class="block text-sm font-bold text-navy-900 mb-2">
+                                2. Regime Tributário Atual
+                            </label>
+                            <div class="grid grid-cols-2 gap-2.5" id="diag-regime-group">
+                                <button type="button" data-value="MEI" class="diag-btn text-left p-3 rounded-xl border-2 border-gold-600 bg-gold-500/10 text-navy-900 font-semibold text-sm transition-all">
+                                    MEI
+                                    <span class="block text-[11px] font-normal text-slate-500">Microempreendedor Individual</span>
+                                </button>
+                                <button type="button" data-value="Simples Nacional" class="diag-btn text-left p-3 rounded-xl border border-slate-200 bg-white hover:border-slate-300 text-slate-700 font-semibold text-sm transition-all">
+                                    Simples Nacional
+                                    <span class="block text-[11px] font-normal text-slate-500">ME ou EPP constituída</span>
+                                </button>
+                                <button type="button" data-value="Lucro Presumido" class="diag-btn text-left p-3 rounded-xl border border-slate-200 bg-white hover:border-slate-300 text-slate-700 font-semibold text-sm transition-all">
+                                    Lucro Presumido
+                                    <span class="block text-[11px] font-normal text-slate-500">Empresa de médio porte</span>
+                                </button>
+                                <button type="button" data-value="Ainda vou abrir" class="diag-btn text-left p-3 rounded-xl border border-slate-200 bg-white hover:border-slate-300 text-slate-700 font-semibold text-sm transition-all">
+                                    Ainda vou abrir
+                                    <span class="block text-[11px] font-normal text-slate-500">Novo CNPJ em Macapá/AP</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Field 3: Principal Necessidade -->
+                        <div>
+                            <label for="diag-need" class="block text-sm font-bold text-navy-900 mb-1.5">
+                                3. Principal Necessidade
+                            </label>
+                            <select id="diag-need" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-medium text-navy-900 focus:border-gold-600 focus:ring-2 focus:ring-gold-500/20 outline-none">
+                                <option value="Estouro de limite MEI" selected>Estouro de limite MEI / Migrar para ME</option>
+                                <option value="Abrir empresa">Abrir empresa em Macapá / Amapá</option>
+                                <option value="Trocar de contador">Trocar de contador</option>
+                                <option value="Regularizar pendências / CADIN">Regularizar pendências / Alvará / CADIN</option>
+                                <option value="Folha / Trabalhista">Folha de pagamento / Prevenção Trabalhista</option>
+                            </select>
+                        </div>
+
+                        <!-- Field 4: Faturamento Mensal Estimado -->
+                        <div>
+                            <label for="diag-revenue" class="block text-sm font-bold text-navy-900 mb-1.5">
+                                4. Faturamento Mensal Estimado
+                            </label>
+                            <select id="diag-revenue" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-medium text-navy-900 focus:border-gold-600 focus:ring-2 focus:ring-gold-500/20 outline-none">
+                                <option value="Até R$ 6.750/mês">Até R$ 6.750/mês</option>
+                                <option value="De R$ 6.751 a R$ 15.000/mês" selected>De R$ 6.751 a R$ 15.000/mês</option>
+                                <option value="De R$ 15.001 a R$ 50.000/mês">De R$ 15.001 a R$ 50.000/mês</option>
+                                <option value="Acima de R$ 50.000/mês">Acima de R$ 50.000/mês</option>
+                                <option value="Ainda vou iniciar o faturamento">Ainda vou iniciar o faturamento</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- Right: Dynamic Diagnosis Summary & WhatsApp Action -->
+                    <div class="lg:col-span-5 bg-navy-900 text-white p-6 sm:p-8 lg:p-10 flex flex-col justify-between">
+                        <div>
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/20 text-gold-400 text-xs font-semibold mb-4">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                                Parecer Técnico Preliminar
+                            </div>
+
+                            <h3 id="diag-result-title" class="font-heading text-xl font-bold text-white leading-snug">
+                                Alerta: Risco de Desenquadramento Retroativo do MEI
+                            </h3>
+
+                            <p id="diag-result-desc" class="text-sm text-slate-300 mt-3 leading-relaxed">
+                                Com faturamento acima de R$ 6.750/mês, a Receita Federal pode desenquadrar seu MEI retroativamente via cruzamento de Pix e cartões, cobrando impostos atrasados com multa.
+                            </p>
+
+                            <div class="mt-5 p-4 rounded-xl bg-navy-800 border border-navy-700">
+                                <span class="text-xs font-semibold uppercase tracking-wider text-gold-400 block mb-1">Ação Recomendada:</span>
+                                <p id="diag-result-action" class="text-xs sm:text-sm text-slate-200 font-medium">
+                                    Migração voluntária e planejada de MEI para Microempresa (ME) no Simples Nacional com cálculo da menor alíquota legal.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-5 border-t border-navy-800">
+                            <button type="submit"
+                                    class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm sm:text-base py-4 px-5 rounded-xl shadow-lg transition-all cursor-pointer">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+                                Enviar Diagnóstico pelo WhatsApp
+                            </button>
+                            <p class="text-[11px] text-center text-slate-400 mt-2.5">
+                                Atendimento direto no (96) 99195-9847 • Sem compromisso
+                            </p>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- AUTHORITY & TRUST SECTION (DIFERENCIAIS E RESPONSÁVEL TÉCNICO)        -->
+    <!-- ===================================================================== -->
+    <section id="diferenciais" class="py-16 lg:py-24 bg-[#F8FAFC]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left: Executive Credential Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-navy-900 text-white rounded-2xl p-8 shadow-2xl border border-navy-800 relative overflow-hidden">
+                        <div class="absolute -right-12 -top-12 w-40 h-40 bg-gold-500/10 rounded-full blur-2xl pointer-events-none"></div>
+                        
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold-500 to-gold-700 text-white flex items-center justify-center font-heading font-extrabold text-2xl mb-6 shadow-glow">
+                            LF
+                        </div>
+                        
+                        <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Responsável Técnico</span>
+                        <h3 class="font-heading text-2xl font-extrabold text-white mt-1">
+                            Luiz Fernando Lemos Costa
+                        </h3>
+                        <p class="text-sm font-semibold text-gold-300 mt-1">
+                            Contador • CRC-AP nº 002037/O-6
+                        </p>
+                        
+                        <div class="mt-6 space-y-3.5 text-sm text-slate-300 border-t border-navy-800 pt-5">
+                            <div class="flex items-start gap-3">
+                                <span class="text-gold-400 font-bold mt-0.5">✓</span>
+                                <span>Rigor técnico contábil e pericial aplicado à realidade das empresas amapaenses</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-gold-400 font-bold mt-0.5">✓</span>
+                                <span>Visão interdisciplinar unindo Contabilidade Estratégica e conformidade jurídica</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-gold-400 font-bold mt-0.5">✓</span>
+                                <span>Prevenção ativa contra autuações fiscais e passivos trabalhistas</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-gold-400 font-bold mt-0.5">✓</span>
+                                <span>Escritório sediado no bairro Julião Ramos, Macapá - AP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Narrative & Differentiators -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-gold-600">Por que a Associados Contábeis</span>
+                    <h2 class="font-heading text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-900 leading-tight">
+                        Rigor pericial e segurança jurídica para blindar o patrimônio do empresário
+                    </h2>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        A maioria dos escritórios limita-se a enviar guias de impostos no fim do mês, deixando o empresário exposto a desenquadramentos surpresa, cobranças indevidas e riscos trabalhistas.
+                    </p>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        Na <strong>Associados Contábeis</strong>, sob a condução do Contador <strong>Luiz Fernando Lemos Costa (CRC-AP nº 002037/O-6)</strong>, aplicamos uma metodologia preventiva que une precisão contábil, análise pericial dos números e conformidade legal para garantir que sua empresa em Macapá cresça de forma sustentável e segura.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-white p-4 rounded-xl border border-slate-200/90">
+                            <h4 class="font-heading font-bold text-navy-900 text-sm">Atendimento Direto e Ágil</h4>
+                            <p class="text-xs text-slate-600 mt-1">Comunicação clara pelo WhatsApp sem intermediários ou demora para responder.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-200/90">
+                            <h4 class="font-heading font-bold text-navy-900 text-sm">Monitoramento Preventivo</h4>
+                            <p class="text-xs text-slate-600 mt-1">Acompanhamento constante de faturamento, certidões e obrigações acessórias.</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a id="about-wa-btn" href="https://wa.me/5596991959847" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center gap-2.5 bg-navy-900 hover:bg-navy-800 text-white font-semibold text-sm sm:text-base px-6 py-3.5 rounded-xl shadow-md transition-all">
+                            Falar Diretamente com o Contador
+                            <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- FAQ ACCORDION (4 PRACTICAL QUESTIONS FOR MACAPÁ BUSINESS OWNERS)      -->
+    <!-- ===================================================================== -->
+    <section id="faq" class="py-16 lg:py-24 bg-white border-t border-slate-200/80">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-gold-600">Tira-Dúvidas</span>
+                <h2 class="font-heading text-2xl sm:text-3xl font-extrabold text-navy-900 mt-2">
+                    Perguntas Frequentes de Empresários em Macapá
+                </h2>
+            </div>
+
+            <div class="space-y-3" id="faq-container">
+                
+                <!-- FAQ 1 -->
+                <div class="bg-[#F8FAFC] border border-slate-200 rounded-xl overflow-hidden">
+                    <button type="button" class="faq-toggle w-full flex items-center justify-between p-5 text-left font-heading font-bold text-navy-900 text-sm sm:text-base hover:bg-slate-100/70 transition-colors cursor-pointer">
+                        <span>1. Já tenho contador, mas quero mudar para a Associados Contábeis. É difícil?</span>
+                        <svg class="faq-icon w-5 h-5 text-gold-600 transition-transform duration-200 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 pt-3">
+                        Não há burocracia para você. Você pode trocar de contabilidade em qualquer mês do ano. Nossa equipe realiza toda a transição técnica e o levantamento documental junto ao escritório anterior, além de fazer uma auditoria inicial completa para verificar se existem pendências ocultas no seu CNPJ.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-[#F8FAFC] border border-slate-200 rounded-xl overflow-hidden">
+                    <button type="button" class="faq-toggle w-full flex items-center justify-between p-5 text-left font-heading font-bold text-navy-900 text-sm sm:text-base hover:bg-slate-100/70 transition-colors cursor-pointer">
+                        <span>2. O que acontece se o MEI ultrapassar o limite anual de faturamento?</span>
+                        <svg class="faq-icon w-5 h-5 text-gold-600 transition-transform duration-200 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 pt-3">
+                        Se o faturamento ultrapassar o teto anual do MEI (R$ 81.000,00 no ano ou proporcional aos meses de abertura), o empreendedor precisa solicitar o desenquadramento e migrar para Microempresa (ME). Se ultrapassar em mais de 20%, o desenquadramento retroage a janeiro do mesmo ano, gerando cobrança de impostos com juros e multa. O ideal é fazer a migração planejada antes de estourar o limite.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-[#F8FAFC] border border-slate-200 rounded-xl overflow-hidden">
+                    <button type="button" class="faq-toggle w-full flex items-center justify-between p-5 text-left font-heading font-bold text-navy-900 text-sm sm:text-base hover:bg-slate-100/70 transition-colors cursor-pointer">
+                        <span>3. Quanto tempo demora para abrir uma empresa e tirar o Alvará em Macapá?</span>
+                        <svg class="faq-icon w-5 h-5 text-gold-600 transition-transform duration-200 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 pt-3">
+                        Com a documentação dos sócios e a consulta prévia de endereço aprovada, o registro na Junta Comercial (JUCAP) e a emissão do CNPJ saem em poucos dias úteis. Em seguida, damos entrada imediata na Inscrição Estadual (SEFAZ-AP) e no Alvará de Funcionamento junto à Prefeitura de Macapá para que você possa emitir notas fiscais rapidamente.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-[#F8FAFC] border border-slate-200 rounded-xl overflow-hidden">
+                    <button type="button" class="faq-toggle w-full flex items-center justify-between p-5 text-left font-heading font-bold text-navy-900 text-sm sm:text-base hover:bg-slate-100/70 transition-colors cursor-pointer">
+                        <span>4. Vocês atendem empresas de outros municípios além de Macapá?</span>
+                        <svg class="faq-icon w-5 h-5 text-gold-600 transition-transform duration-200 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 pt-3">
+                        Sim. Além do atendimento presencial em nosso escritório no bairro Julião Ramos em Macapá e em Santana, atendemos de forma 100% digital empresas de todos os municípios do Amapá (Laranjal do Jari, Oiapoque, Porto Grande, Mazagão, Pedra Branca e demais localidades).
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- FOOTER & CONTATO                                                      -->
+    <!-- ===================================================================== -->
+    <footer id="contato" class="bg-navy-950 text-slate-300 border-t border-navy-800">
+        <!-- Final Callout Banner -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+            <div class="bg-gradient-to-r from-navy-900 to-navy-800 border border-navy-700 rounded-2xl p-8 sm:p-12 flex flex-col lg:flex-row items-center justify-between gap-8">
+                <div class="max-w-2xl text-center lg:text-left">
+                    <h2 class="font-heading text-2xl sm:text-3xl font-extrabold text-white">
+                        Pronto para proteger e regularizar sua empresa em Macapá?
+                    </h2>
+                    <p class="text-slate-300 mt-2.5 text-sm sm:text-base">
+                        Converse agora pelo WhatsApp com o Contador Luiz Fernando Lemos Costa e receba orientação personalizada.
+                    </p>
+                </div>
+                <div class="shrink-0 w-full sm:w-auto">
+                    <a id="footer-wa-btn" href="https://wa.me/5596991959847" target="_blank" rel="noopener noreferrer"
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-gold-600 hover:bg-gold-500 text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg hover:shadow-glow transition-all">
+                        WhatsApp: (96) 99195-9847
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Grid -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-navy-800/80">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+                <div>
+                    <span class="font-heading font-bold text-lg text-white block mb-2">ASSOCIADOS CONTÁBEIS</span>
+                    <p class="text-slate-400 leading-relaxed">
+                        Contabilidade consultiva, migração de MEI para ME, planejamento tributário e blindagem trabalhista em Macapá - AP.
+                    </p>
+                    <p class="text-xs text-gold-400 font-semibold mt-3">
+                        Contador Luiz Fernando Lemos Costa • CRC-AP nº 002037/O-6
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-heading font-bold text-white uppercase tracking-wider text-xs mb-3">Acesso Rápido</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="#servicos" class="hover:text-gold-400 transition-colors">Serviços Contábeis</a></li>
+                        <li><a href="#diagnostico" class="hover:text-gold-400 transition-colors">Diagnóstico Rápido MEI / Empresa</a></li>
+                        <li><a href="#diferenciais" class="hover:text-gold-400 transition-colors">Responsável Técnico</a></li>
+                        <li><a href="#faq" class="hover:text-gold-400 transition-colors">Perguntas Frequentes</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-heading font-bold text-white uppercase tracking-wider text-xs mb-3">Contato & Localização</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li>📍 Julião Ramos, Macapá - AP</li>
+                        <li>📱 WhatsApp: <a href="https://wa.me/5596991959847" target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:underline font-medium">(96) 99195-9847</a></li>
+                        <li>🌐 <a href="https://associadoscontabeis.com.br" class="text-slate-300 hover:text-gold-400 transition-colors">associadoscontabeis.com.br</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-10 pt-6 border-t border-navy-800/60 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3">
+                <p>&copy; <span id="current-year"></span> Associados Contábeis (associadoscontabeis.com.br). Todos os direitos reservados.</p>
+                <p>CRC-AP nº 002037/O-6 • Macapá - Amapá</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================================================================== -->
+    <!-- FLOATING WHATSAPP BUTTON                                              -->
+    <!-- ===================================================================== -->
+    <a id="floating-wa-btn" href="https://wa.me/5596991959847" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp (96) 99195-9847"
+       class="fixed bottom-5 right-5 z-50 flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-4 py-3.5 rounded-full shadow-2xl hover:scale-105 transition-all">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+        <span class="hidden sm:inline text-sm">(96) 99195-9847</span>
+    </a>
+
+    <!-- ===================================================================== -->
+    <!-- JAVASCRIPT INTERATIVO                                                 -->
+    <!-- ===================================================================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Ano atual no rodapé
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // 2. Links padrão de WhatsApp com mensagem pré-preenchida
+            const defaultMsg = `Olá, ${WHATSAPP_CONFIG.consultantName}! Vim pelo site ${WHATSAPP_CONFIG.domain} e gostaria de falar sobre assessoria contábil para minha empresa em Macapá.`;
+            const defaultWaUrl = buildWhatsAppUrl(defaultMsg);
+
+            ['header-wa-btn', 'mobile-wa-btn', 'hero-wa-btn', 'about-wa-btn', 'footer-wa-btn', 'floating-wa-btn'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.href = defaultWaUrl;
+            });
+
+            // 3. Menu Mobile
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const iconOpen = document.getElementById('icon-open');
+            const iconClose = document.getElementById('icon-close');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden', !isHidden);
+                iconOpen.classList.toggle('hidden', isHidden);
+                iconClose.classList.toggle('hidden', !isHidden);
+            });
+
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    iconOpen.classList.remove('hidden');
+                    iconClose.classList.add('hidden');
+                });
+            });
+
+            // 4. Diagnóstico Rápido MEI / Empresa
+            let selectedRegime = 'MEI';
+            const regimeButtons = document.querySelectorAll('.diag-btn');
+            const nameInput = document.getElementById('diag-name');
+            const nameError = document.getElementById('name-error');
+            const needSelect = document.getElementById('diag-need');
+            const revenueSelect = document.getElementById('diag-revenue');
+            const diagnosticForm = document.getElementById('diagnostic-form');
+
+            const resTitle = document.getElementById('diag-result-title');
+            const resDesc = document.getElementById('diag-result-desc');
+            const resAction = document.getElementById('diag-result-action');
+
+            function updateDiagnosisPreview() {
+                const need = needSelect.value;
+                const revenue = revenueSelect.value;
+
+                if (selectedRegime === 'Ainda vou abrir' || need === 'Abrir empresa') {
+                    resTitle.textContent = 'Planejamento Inicial: Comece com o CNPJ e CNAE Corretos';
+                    resDesc.textContent = 'Abrir a empresa com o regime tributário ou CNAEs inadequados faz você pagar imposto a mais desde o primeiro mês e pode atrasar o Alvará em Macapá.';
+                    resAction.textContent = 'Estudo tributário + abertura completa na JUCAP, Receita Federal, SEFAZ-AP e Prefeitura de Macapá.';
+                } else if (selectedRegime === 'MEI' && (revenue !== 'Até R$ 6.750/mês' || need === 'Estouro de limite MEI')) {
+                    resTitle.textContent = 'Alerta: Risco de Desenquadramento Retroativo do MEI';
+                    resDesc.textContent = 'Com faturamento acima de R$ 6.750/mês, a Receita Federal pode desenquadrar seu MEI retroativamente via cruzamento de Pix e cartões, cobrando impostos atrasados com multa.';
+                    resAction.textContent = 'Migração voluntária e planejada de MEI para Microempresa (ME) no Simples Nacional com cálculo da menor alíquota legal.';
+                } else if (need === 'Regularizar pendências / CADIN') {
+                    resTitle.textContent = 'Prioridade: Destravamento Fiscal e Certidões Negativas';
+                    resDesc.textContent = 'Pendências no CADIN, malha fina ou falta de alvará impedem emissão de notas, empréstimos bancários e contratos públicos ou privados.';
+                    resAction.textContent = 'Levantamento fiscal completo (Federal, Estadual e Municipal) para regularização e liberação das CNDs.';
+                } else if (need === 'Folha / Trabalhista') {
+                    resTitle.textContent = 'Blindagem Trabalhista e Conformidade no eSocial';
+                    resDesc.textContent = 'Falhas em registros, cálculos de folha ou FGTS Digital são a principal causa de reclamações trabalhistas em pequenas empresas.';
+                    resAction.textContent = 'Auditoria preventiva da rotina de Departamento Pessoal e gestão mensal completa.';
+                } else {
+                    resTitle.textContent = 'Oportunidade de Economia Tributária e Gestão Consultiva';
+                    resDesc.textContent = `Para empresas no regime ${selectedRegime} com faturamento ${revenue.toLowerCase()}, uma revisão de enquadramento (como Fator R e segregação de receitas) gera economia imediata.`;
+                    resAction.textContent = 'Diagnóstico tributário comparativo e implantação de contabilidade consultiva próxima.';
+                }
+            }
+
+            regimeButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    regimeButtons.forEach(b => {
+                        b.classList.remove('border-2', 'border-gold-600', 'bg-gold-500/10', 'text-navy-900');
+                        b.classList.add('border', 'border-slate-200', 'bg-white', 'text-slate-700');
+                    });
+                    btn.classList.remove('border', 'border-slate-200', 'bg-white', 'text-slate-700');
+                    btn.classList.add('border-2', 'border-gold-600', 'bg-gold-500/10', 'text-navy-900');
+
+                    selectedRegime = btn.getAttribute('data-value');
+                    updateDiagnosisPreview();
+                });
+            });
+
+            needSelect.addEventListener('change', updateDiagnosisPreview);
+            revenueSelect.addEventListener('change', updateDiagnosisPreview);
+
+            nameInput.addEventListener('input', () => {
+                if (nameInput.value.trim().length > 0) {
+                    nameError.classList.add('hidden');
+                    nameInput.classList.remove('border-red-500');
+                }
+            });
+
+            diagnosticForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const clientName = nameInput.value.trim();
+
+                if (!clientName) {
+                    nameError.classList.remove('hidden');
+                    nameInput.classList.add('border-red-500');
+                    nameInput.focus();
+                    return;
+                }
+
+                const msg = `Olá, ${WHATSAPP_CONFIG.consultantName}! Fiz o *Diagnóstico Rápido* no site ${WHATSAPP_CONFIG.domain}:\n\n` +
+                            `• *Nome / Empresa:* ${clientName}\n` +
+                            `• *Regime Atual:* ${selectedRegime}\n` +
+                            `• *Principal Necessidade:* ${needSelect.value}\n` +
+                            `• *Faturamento Estimado:* ${revenueSelect.value}\n\n` +
+                            `Gostaria de conversar sobre a melhor solução para o meu negócio!`;
+
+                window.open(buildWhatsAppUrl(msg), '_blank', 'noopener,noreferrer');
+            });
+
+            // Inicializar texto do diagnóstico
+            updateDiagnosisPreview();
+
+            // 5. Acordeão FAQ
+            const faqToggles = document.querySelectorAll('.faq-toggle');
+            faqToggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    const content = toggle.nextElementSibling;
+                    const icon = toggle.querySelector('.faq-icon');
+                    const isOpen = !content.classList.contains('hidden');
+
+                    document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+                    document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('rotate-180'));
+
+                    if (!isOpen) {
+                        content.classList.remove('hidden');
+                        icon.classList.add('rotate-180');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
